@@ -1,30 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Makoti Deriv Analysis</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+
 <body>
     <div class="container">
         <h1>Makoti Deriv Analysis Tool</h1>
-        <div>
+
+        <!-- Top Panel -->
+        <div class="panel" id="top-panel">
             <label for="symbol">Select Volatility Index:</label>
             <select id="symbol">
-                <option value="R_25">Volatility 25 (R_25)</option>
-                <option value="R_50">Volatility 50 (R_50)</option>
-                <option value="R_100">Volatility 100 (R_100)</option>
+                <option value="R_25">R_25</option>
+                <option value="R_50">R_50</option>
+                <option value="R_100">R_100</option>
             </select>
+            <div id="current-price">Current Price: -</div>
         </div>
-        <div id="dashboard">
-            <h2>Live Ticks</h2>
-            <div id="ticks"></div>
-            <h2>Digit Frequency (Last Digit)</h2>
+
+        <!-- Middle Panel -->
+        <div class="panel" id="middle-panel">
+            <h2>Digit Frequency</h2>
             <div id="frequency"></div>
-            <h2>Matches Prediction</h2>
+            <h2>Prediction</h2>
             <div id="prediction"></div>
+        </div>
+
+        <!-- Bottom Panel -->
+        <div class="panel" id="bottom-panel">
+            <h2>Candlestick Chart</h2>
+            <canvas id="chart"></canvas>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
-</html>
