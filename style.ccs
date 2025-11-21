@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 12px;
@@ -48,3 +48,13 @@ select {
     margin-top: 10px;
 }
 
+.multi-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sub-panel {
+    flex: 1 1 45%;
+    margin: 10px;
+}
