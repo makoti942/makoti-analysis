@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Makoti Deriv Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Makoti Deriv Analysis Tool</h1>
+        <div>
+            <label for="symbol">Select Volatility Index:</label>
+            <select id="symbol">
+                <option value="R_25">Volatility 25 (R_25)</option>
+                <option value="R_50">Volatility 50 (R_50)</option>
+                <option value="R_100">Volatility 100 (R_100)</option>
+            </select>
+        </div>
+        <div id="dashboard">
+            <h2>Live Ticks</h2>
+            <div id="ticks"></div>
+            <h2>Digit Frequency (Last Digit)</h2>
+            <div id="frequency"></div>
+            <h2>Matches Prediction</h2>
+            <div id="prediction"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
