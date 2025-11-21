@@ -1,0 +1,26 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    background-color: #111;
+}
+
+h1, h2 {
+    color: #00ffea;
+}
+
+#ticks, #frequency, #prediction {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 5px;
+}
